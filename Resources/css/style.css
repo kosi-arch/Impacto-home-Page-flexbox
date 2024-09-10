@@ -1,0 +1,286 @@
+/* Universal Styles */
+body{
+    margin: 0 5.56%;
+}
+
+*{
+    font-family: Raleway;
+    font-weight: normal;
+}
+
+h1{
+    font-size: 2.25rem;
+    font-weight: bold;
+    color: #fff;
+}
+
+@media only screen and (max-width: 1024px) {
+    h1 {
+        font-size: 2rem;
+    }
+    h2 {
+        font-size: 1.3rem;
+    }
+    .cta a{
+        font-size: 1rem;
+    }
+}
+
+h2{
+    font-size: 1.5rem;
+    font-weight: 700;
+}
+
+h4{
+    font-size: 1rem;
+    padding: 0;
+    margin: 0;
+}
+
+h5{
+    font-size: 0.875rem;
+}
+
+a{
+    font-size: 1rem;
+    font-weight: 700;
+    text-decoration: none;
+    color: black;
+}
+
+a.tertiary.button:hover{
+    color: #9C9C9C;
+}
+
+a.secondary.button:hover{
+    color: #fff;
+}
+
+button a{
+    font-size: 1.25rem;
+}
+
+p{
+    font-size: 1.25rem;
+}
+
+.cta.secondary.button{
+    border: 1px solid black;
+    justify-content: center;
+    padding: 0.75rem 1.5rem;
+}
+
+.cta.secondary.button:hover{
+    background-color: black;
+}
+
+.tertiary.button{
+    padding: 0.5rem 1.75rem;
+}
+
+@media only screen and (max-width: 1024px) {
+    .tertiary.button{
+        padding: 0.5rem 1rem;
+    }
+    .cta.secondary.button{
+        padding: 0.5rem 1rem;
+    }
+}
+
+button{
+    padding: 0.75rem 1.5rem;
+    width:16rem;
+    border: 0;
+    background-color: black;
+}
+
+button a{
+    color: #fff;
+}
+
+.cta:hover{
+    background-color: #fff;
+}
+
+.cta a:hover{
+    color: black;
+}
+
+
+/* Header */
+header{
+    margin: 1.5rem 0;
+    padding: 0;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+}
+
+.main-nav li{
+    display: inline;
+}
+@media only screen and (max-width: 500px) {
+    .main-nav{
+        display: none;
+    }
+    .logo-container{
+        width: 100%;
+        display: flex;
+        flex-grow: 0.5;
+        justify-content: center;
+    }
+    h1{
+        font-size: 1.5rem;
+    }
+}
+
+.logo-container{
+    width: 19.5%;
+    height:4rem; 
+}
+
+#logo{
+    width:100%;
+    height:auto;
+}
+
+/* Secondary Nav */
+.secondary-nav-container{
+    margin: 0;
+    width:100%;
+}
+
+.secondary-nav{
+    padding: 0;
+    margin: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+}
+
+.secondary-nav li {
+    display:inline-flex;
+    padding: 0.75em 1.5rem;
+    border: 1px solid black;
+    justify-content: center;
+    flex-grow: 1;
+}
+
+@media only screen and (max-width: 1024px) {
+    .secondary-nav li {
+        padding: 0.5rem 1rem;
+    }
+    .secondary-nav a{
+        font-size: 0.8rem;
+    }
+}
+
+@media only screen and (max-width: 500px) {
+    .secondary-nav-container{
+        display: none;
+    }
+}
+.secondary-nav li:hover {
+    background-color: black;
+}
+
+/* Hero */
+.hero{
+    width: 100%;
+    margin: 0;
+    height: 36rem;
+}
+.container{
+    background-image: url(../images/background-img2.webp);
+    height: 100%;
+    max-width: 100%;
+    background-size: cover;
+    background-position: center center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.hero-content{
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+}
+
+@media only screen and (max-width: 500px) {
+    
+    h1{
+        font-size: 1.5rem;
+        width: 90%;
+        text-align: center;
+    }
+}
+/* Brands */
+.brands{
+    width:100%;
+    overflow: hidden;
+    display: flex;
+    margin: 1.5rem 0;
+}
+
+.brands img{
+    max-width:10%;
+    object-fit: contain;
+    padding: 1.5rem;
+    height: auto;
+}
+/* Story */
+.story{
+    margin: 3rem 0;
+}
+
+.story p{
+    width: 50%;
+}
+
+@media only screen and (max-width: 1024px) {
+    .story p{
+        font-size: 1rem;
+    }
+}
+
+/* Bestsellers */
+.text p{
+font-size: 1rem;
+margin: 0.25rem 0;
+}
+
+.heading{
+    font-weight: 700;
+    font-size: 0.9rem;
+}
+
+.bestsellers{
+    margin: 3rem 0;
+    width: 100%;
+    overflow: hidden;
+}
+
+.image img{
+    max-width:19.68rem;
+    height:auto;
+}
+
+.content{
+    margin: 0 3rem 0 0;
+}
+
+.content-box{
+    display:flex;
+    justify-content: space-between;
+}
+
+
+/* Footer */
+footer{
+    border-top: 1px solid;
+    margin-top: 6rem;
+    margin-bottom: 2rem;
+}
